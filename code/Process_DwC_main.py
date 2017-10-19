@@ -10,7 +10,7 @@ import argparse
 import pandas as pd
 
 import ConvertDwC_into_Polygon as cp
-import Create_SpeciesTable as cs
+import Create_Tables as ct
 
 parser = argparse.ArgumentParser()
 parser.add_argument('occurrence', help='Name of the occurrence data (txt)')
@@ -25,8 +25,8 @@ vegdb=pd.read_csv(args.occurrence,sep='\t')
 
 speciesheader="speciesKey;kingdom;phylum;class;order;family;genus;species;vernacularName \n"
 
-sp_table=cs.create_speciestable(vegdb)
-cs.export_table(sp_table,speciesheader,args.shapefile+"SpeciesTable")
+sp_table=ct.create_speciestable(vegdb)
+ct.export_table(sp_table,speciesheader,args.shapefile+"SpeciesTable")
 
 footprint_wegdb=cp.polygonize_dwc(vegdb,args.shapefile)
 
