@@ -18,7 +18,7 @@ def create_plottable(vegdb_dataframe):
 
 def create_observtable(vegdb_dataframe,nameofoutput):
     obs_table = vegdb_dataframe[["occurrenceID", "eventID","speciesKey","year","eventDate","organismQuantity","organismQuantityType"]]
-    obs_table.to_csv(nameofoutput+'.csv',sep=";")
+    obs_table.to_csv(nameofoutput+'.csv',sep=";",index=False)
 
 def export_table(table,header,nameofoutput):
     fileout = open(nameofoutput+'.csv', "a")
