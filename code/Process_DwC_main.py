@@ -19,9 +19,7 @@ args = parser.parse_args()
 
 vegdb=pd.read_csv(args.occurrence,sep='\t')
 
-vegdb_wtl=vegdb[vegdb['habitat']=='Saltmarch'] # temporary filtering for fast testing purpose
-
-footprint_wtl=cp.polygonize_dwc(vegdb_wtl,args.shapefile)
+footprint_wegdb=cp.polygonize_dwc(vegdb,args.shapefile)
 
 
 
