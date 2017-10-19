@@ -11,14 +11,21 @@ import argparse
 import pandas as pd
 
 import ConvertDwC_into_Polygon as cp
+import Create_SpeciesTable as cs
 
 parser = argparse.ArgumentParser()
 parser.add_argument('occurrence', help='Name of the occurrence data (txt)')
 parser.add_argument('shapefile', help='Name of the output shapefile (shp)')
 args = parser.parse_args()
 
-vegdb=pd.read_csv(args.occurrence,sep='\t')
+#Read the DwC data
 
+vegdb=pd.read_csv(args.occurrence,sep='\t')
+vegdb.dropna(axis=1, how='all')
+
+#Create tables --> Species Table, Observation Table, Plot Table and shapefile related the plot measurements
+
+cs.create_speciestable(vegdb)
 footprint_wegdb=cp.polygonize_dwc(vegdb,args.shapefile)
 
 

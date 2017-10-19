@@ -6,7 +6,7 @@ def polygonize_dwc(vegdb_dataframe,shapefile):
 
     groupbypoly = vegdb_dataframe.groupby('footprintWKT')
     schema = {'geometry': 'Polygon',
-              'properties': {'nof_species': 'str'}, }
+              'properties': {'nof_sp': 'str'}, }
 
     with collection(shapefile, "w", "ESRI Shapefile", schema) as output:
         for footprintWKT, group in groupbypoly:
