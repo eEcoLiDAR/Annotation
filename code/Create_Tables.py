@@ -7,8 +7,17 @@ def create_speciestable(vegdb_dataframe):
                                 group["genus"].unique()[0],group["species"].unique()[0],group["vernacularName"].unique()[0])
     return sp_table
 
-def export_table(sp_table,header,nameofoutput):
+def create_plottable(vegdb_dataframe):
+    groupby_plotid = vegdb_dataframe.groupby("eventID")
+    plot_table=""
+    for eventID, group in groupby_plotid:
+        plot_table+= "%s;%f;%f;%s;%s;%s;%f;%s \n" % (group["eventID"].unique()[0],group["decimalLatitude"].unique()[0],group["decimalLongitude"].unique()[0],group["footprintWKT"].unique()[0],
+                                                        group["habitat"].unique()[0],group["samplingProtocol"].unique()[0],group["sampleSizeValue"].unique()[0],
+                                                        group["sampleSizeUnit"].unique()[0])
+    return plot_table
+
+def export_table(table,header,nameofoutput):
     fileout = open(nameofoutput+'.csv', "a")
     fileout.write(header)
-    fileout.write(sp_table)
+    fileout.write(table)
     fileout.close()

@@ -21,13 +21,18 @@ args = parser.parse_args()
 
 vegdb=pd.read_csv(args.occurrence,sep='\t')
 
-#Create tables --> Species Table, Observation Table, Plot Table and shapefile related the plot measurements
-
-speciesheader="speciesKey;kingdom;phylum;class;order;family;genus;species;vernacularName \n"
+#Create tables --> Species Table, Observation Table, Plot Table
 
 sp_table=ct.create_speciestable(vegdb)
-ct.export_table(sp_table,speciesheader,args.shapefile+"SpeciesTable")
+plot_table=ct.create_plottable(vegdb)
 
+#Export tables --> Species Table, Observation Table, Plot Table and shapefile related the plot measurements
+
+speciesheader="speciesKey;kingdom;phylum;class;order;family;genus;species;vernacularName \n"
+plotheader="eventID;decimalLatitude;decimalLongitude;footprintWKT;habitat;samplingProtocol;sampleSizeValue;sampleSizeUnit \n"
+
+ct.export_table(sp_table,speciesheader,args.shapefile+"SpeciesTable")
+ct.export_table(plot_table,plotheader,args.shapefile+"PlotTable")
 footprint_wegdb=cp.polygonize_dwc(vegdb,args.shapefile)
 
 
