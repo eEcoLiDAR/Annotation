@@ -21,11 +21,11 @@ args = parser.parse_args()
 #Read the DwC data
 
 vegdb=pd.read_csv(args.occurrence,sep='\t')
-vegdb.dropna(axis=1, how='all')
 
 #Create tables --> Species Table, Observation Table, Plot Table and shapefile related the plot measurements
 
-cs.create_speciestable(vegdb)
+sp_table=cs.create_speciestable(vegdb)
+print(sp_table)
 footprint_wegdb=cp.polygonize_dwc(vegdb,args.shapefile)
 
 
