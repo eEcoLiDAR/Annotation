@@ -26,6 +26,8 @@ vegdb=pd.read_csv(args.occurrence,sep='\t')
 sp_table=ct.create_speciestable(vegdb)
 plot_table=ct.create_plottable(vegdb)
 
+ct.create_observtable(vegdb,args.shapefile+"ObservationTable")
+
 #Export tables --> Species Table, Observation Table, Plot Table and shapefile related the plot measurements
 
 speciesheader="speciesKey;kingdom;phylum;class;order;family;genus;species;vernacularName \n"

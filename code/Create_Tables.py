@@ -16,6 +16,10 @@ def create_plottable(vegdb_dataframe):
                                                         group["sampleSizeUnit"].unique()[0])
     return plot_table
 
+def create_observtable(vegdb_dataframe,nameofoutput):
+    obs_table = vegdb_dataframe[["occurrenceID", "eventID","speciesKey","year","eventDate","organismQuantity","organismQuantityType"]]
+    obs_table.to_csv(nameofoutput+'.csv',sep=";")
+
 def export_table(table,header,nameofoutput):
     fileout = open(nameofoutput+'.csv', "a")
     fileout.write(header)
