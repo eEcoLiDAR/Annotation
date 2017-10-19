@@ -23,8 +23,10 @@ vegdb=pd.read_csv(args.occurrence,sep='\t')
 
 #Create tables --> Species Table, Observation Table, Plot Table and shapefile related the plot measurements
 
+speciesheader="speciesKey;kingdom;phylum;class;order;family;genus;species;vernacularName \n"
+
 sp_table=cs.create_speciestable(vegdb)
-cs.export_table(sp_table,args.shapefile+"SpeciesTable")
+cs.export_table(sp_table,speciesheader,args.shapefile+"SpeciesTable")
 
 footprint_wegdb=cp.polygonize_dwc(vegdb,args.shapefile)
 
