@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Aim: Converting Dutch Vegetation Database (LVD) data into annotation data for EcoLiDAR project
 @Author: Zsófia Koma (UvA)
@@ -25,7 +24,8 @@ vegdb=pd.read_csv(args.occurrence,sep='\t')
 #Create tables --> Species Table, Observation Table, Plot Table and shapefile related the plot measurements
 
 sp_table=cs.create_speciestable(vegdb)
-print(sp_table)
+cs.export_table(sp_table,args.shapefile+"SpeciesTable")
+
 footprint_wegdb=cp.polygonize_dwc(vegdb,args.shapefile)
 
 
