@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 def create_speciestable(vegdb_dataframe):
     groupby_spname = vegdb_dataframe.groupby("speciesKey")
@@ -10,6 +11,7 @@ def create_speciestable(vegdb_dataframe):
 
 def create_plotID(vegdb_dataframe):
     vegdb_dataframe['plotID'] = pd.Categorical(vegdb_dataframe['decimalLatitude'].astype(str) + vegdb_dataframe['decimalLongitude'].astype(str)).codes
+    #print(vegdb_dataframe[['plotID','decimalLatitude','decimalLongitude']])
     return vegdb_dataframe
 
 def create_plottable(vegdb_dataframe):
@@ -23,6 +25,10 @@ def create_plottable(vegdb_dataframe):
 
 def create_observtable(vegdb_dataframe,nameofoutput):
     obs_table = vegdb_dataframe[["occurrenceID","plotID","eventID","speciesKey","year","eventDate","organismQuantity","organismQuantityType"]]
+    obs_table["speciesKey"] = obs_table["speciesKey"].fillna(-1).astype(int)
+    obs_table = obs_table[(obs_table["speciesKey"]>0)]
+    obs_table["year"] = obs_table["year"].fillna(-1).astype(int)
+    obs_table = obs_table[(obs_table["year"]>0)]
     obs_table.to_csv(nameofoutput+'.csv',sep=";",index=False)
 
 def export_table(table,header,nameofoutput):
