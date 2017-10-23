@@ -22,6 +22,8 @@ args = parser.parse_args()
 
 vegdb=pd.read_csv(args.occurrence,sep='\t')
 
+vegdb=ct.create_plotID(vegdb)
+
 #Create tables --> Species Table, Plot Table, Observation Table
 
 sp_table=ct.create_speciestable(vegdb)
