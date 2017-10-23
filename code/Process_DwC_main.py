@@ -32,7 +32,7 @@ ct.create_observtable(vegdb,args.shapefile+"ObservationTable")
 #Export tables --> Species Table, Observation Table, Plot Table and shapefile related the plot measurements
 
 speciesheader="speciesKey;kingdom;phylum;class;order;family;genus;species;vernacularName \n"
-plotheader="eventID;decimalLatitude;decimalLongitude;footprintWKT;habitat;samplingProtocol;sampleSizeValue;sampleSizeUnit \n"
+plotheader="plotID;decimalLatitude;decimalLongitude;footprintWKT;habitat;samplingProtocol;sampleSizeValue;sampleSizeUnit \n"
 
 ct.export_table(sp_table,speciesheader,args.shapefile+"SpeciesTable")
 ct.export_table(plot_table,plotheader,args.shapefile+"PlotTable")
