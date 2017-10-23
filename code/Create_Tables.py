@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 def create_speciestable(vegdb_dataframe):
     groupby_spname = vegdb_dataframe.groupby("speciesKey")
