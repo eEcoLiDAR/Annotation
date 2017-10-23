@@ -8,6 +8,7 @@ python Process_DwC_main.py [filepath]\occurrence.txt
 
 import argparse
 import pandas as pd
+import numpy as np
 
 import ConvertDwC_into_Polygon as cp
 import Create_Tables as ct
@@ -21,7 +22,7 @@ args = parser.parse_args()
 
 vegdb=pd.read_csv(args.occurrence,sep='\t')
 
-#Create tables --> Species Table, Observation Table, Plot Table
+#Create tables --> Species Table, Plot Table, Observation Table
 
 sp_table=ct.create_speciestable(vegdb)
 plot_table=ct.create_plottable(vegdb)
