@@ -29,7 +29,7 @@ vegdb = vegdb[(vegdb["coordinateUncertaintyInMeters"]<1000)]
 
 #Add area
 area=cp.polyarea(vegdb)
-vegdb = vegdb[(area<1000)]
+vegdb = vegdb[(area<10000)]
 
 # Create plotID
 vegdb=ct.create_plotID(vegdb)
