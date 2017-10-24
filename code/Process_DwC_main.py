@@ -25,6 +25,7 @@ vegdb=pd.read_csv(args.occurrence,sep='\t')
 #Exclude fungi and algea and where the samplesizeunit is bigger than (exclude red list species where the coordinates were randomly modified) -- specific application for the BSc course
 vegdb= vegdb[pd.isnull(vegdb.habitat)==False]
 vegdb = vegdb[(vegdb["kingdom"]== "Plantae")]
+vegdb = vegdb[(vegdb["sampleSizeValue"]<100)]
 
 # Create plotID
 vegdb=ct.create_plotID(vegdb)

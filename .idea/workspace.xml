@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6984170-3e70-4525-8552-566671aecc71" name="Default" comment="" />
+    <list default="true" id="c6984170-3e70-4525-8552-566671aecc71" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/Process_DwC_main.py" afterPath="$PROJECT_DIR$/code/Process_DwC_main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/AnalyseTables.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/AnalyseTables.ipynb" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Process_DwC_main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Process_DwC_main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/Process_DwC_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="45" />
+            <state relative-caret-position="459">
+              <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
               <folding>
                 <element signature="e#254#269#0" expanded="true" />
               </folding>
@@ -23,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnalyseTables.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AnalyseTables.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jupyter_explore/AnalyseTables.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="3" />
+              <selected id="2" />
             </state>
           </provider>
         </entry>
@@ -73,8 +76,8 @@
         <option value="$PROJECT_DIR$/code/Create_SpeciesTable.py" />
         <option value="$PROJECT_DIR$/code/ConvertDwC_into_Polygon.py" />
         <option value="$PROJECT_DIR$/code/Create_Tables.py" />
-        <option value="$PROJECT_DIR$/code/Process_DwC_main.py" />
         <option value="$PROJECT_DIR$/jupyter_explore/AnalyseTables.ipynb" />
+        <option value="$PROJECT_DIR$/code/Process_DwC_main.py" />
       </list>
     </option>
   </component>
@@ -383,20 +386,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/Process_DwC_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="45" />
-          <folding>
-            <element signature="e#254#269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jupyter_explore/AnalyseTables.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Process_DwC_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <folding>
+            <element signature="e#254#269#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
