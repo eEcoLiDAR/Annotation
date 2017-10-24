@@ -21,6 +21,12 @@ args = parser.parse_args()
 #Read the DwC data
 
 vegdb=pd.read_csv(args.occurrence,sep='\t')
+
+#Exclude fungi and algea and where the samplesizeunit is bigger than (exclude red list species where the coordinates were randomly modified) -- specific application for the BSc course
+vegdb= vegdb[pd.isnull(vegdb.habitat)==False]
+vegdb = vegdb[(vegdb["kingdom"]!= "Fungi") | (vegdb["kingdom"]!= "Chromista")]
+
+# Create plotID
 vegdb=ct.create_plotID(vegdb)
 
 #Create tables --> Species Table, Plot Table, Observation Table
@@ -32,7 +38,7 @@ ct.create_observtable(vegdb,args.shapefile+"ObservationTable")
 
 #Export tables --> Species Table, Observation Table, Plot Table and shapefile related the plot measurements
 
-speciesheader="speciesKey;kingdom;phylum;class;order;family;genus;species;vernacularName \n"
+speciesheader="speciesKey;species;kingdom;phylum;class;order;family;genus;specificEpithet;vernacularName \n"
 plotheader="plotID;decimalLatitude;decimalLongitude;footprintWKT;habitat;samplingProtocol;sampleSizeValue;sampleSizeUnit \n"
 
 ct.export_table(sp_table,speciesheader,args.shapefile+"SpeciesTable")
