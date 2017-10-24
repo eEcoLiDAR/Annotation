@@ -3,7 +3,7 @@ Aim: Converting Dutch Vegetation Database (LVD) data into annotation data for Ec
 @Author: Zsófia Koma (UvA)
 
 Example usage from command line (Anaconda prompt):
-python Process_DwC_main.py [filepath]\occurrence.txt
+python Process_DwC_main.py [filepath]\occurrence.txt [filepath]\output
 """
 
 import argparse
