@@ -8,7 +8,6 @@ python Process_DwC_main.py [filepath]\occurrence.txt [filepath]\output
 
 import argparse
 import pandas as pd
-import numpy as np
 
 import ConvertDwC_into_Polygon as cp
 import Create_Tables as ct
@@ -22,10 +21,15 @@ args = parser.parse_args()
 
 vegdb=pd.read_csv(args.occurrence,sep='\t')
 
-#Exclude fungi and algea and where the samplesizeunit is bigger than (exclude red list species where the coordinates were randomly modified) -- specific application for the BSc course
+#Exclude fungi and algea and where the coordinateUncertaintyInMeters is lower than 1 km -- specific application for the BSc course
 vegdb= vegdb[pd.isnull(vegdb.habitat)==False]
 vegdb = vegdb[(vegdb["kingdom"]== "Plantae")]
-vegdb = vegdb[(vegdb["sampleSizeValue"]<100)]
+#vegdb = vegdb[(vegdb["sampleSizeValue"]<1000)] # sampleSizeValue they do not correctly identified the squaremeter - squarekm
+vegdb = vegdb[(vegdb["coordinateUncertaintyInMeters"]<1000)]
+
+#Add area
+area=cp.polyarea(vegdb)
+vegdb = vegdb[(area<1000)]
 
 # Create plotID
 vegdb=ct.create_plotID(vegdb)
@@ -40,7 +44,7 @@ ct.create_observtable(vegdb,args.shapefile+"ObservationTable")
 #Export tables --> Species Table, Observation Table, Plot Table and shapefile related the plot measurements
 
 speciesheader="speciesKey;species;kingdom;phylum;class;order;family;genus;specificEpithet;vernacularName \n"
-plotheader="plotID;decimalLatitude;decimalLongitude;footprintWKT;habitat;samplingProtocol;sampleSizeValue;sampleSizeUnit \n"
+plotheader="plotID;decimalLatitude;decimalLongitude;coordinateUncertaintyInMeters;footprintWKT;habitat;samplingProtocol;sampleSizeValue;sampleSizeUnit \n"
 
 ct.export_table(sp_table,speciesheader,args.shapefile+"SpeciesTable")
 ct.export_table(plot_table,plotheader,args.shapefile+"PlotTable")

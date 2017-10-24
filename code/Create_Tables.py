@@ -10,14 +10,13 @@ def create_speciestable(vegdb_dataframe):
 
 def create_plotID(vegdb_dataframe):
     vegdb_dataframe['plotID'] = pd.Categorical(vegdb_dataframe['decimalLatitude'].astype(str) + vegdb_dataframe['decimalLongitude'].astype(str)).codes
-    #print(vegdb_dataframe[['plotID','decimalLatitude','decimalLongitude']])
     return vegdb_dataframe
 
 def create_plottable(vegdb_dataframe):
     groupby_plotid = vegdb_dataframe.groupby('plotID')
     plot_table=""
     for location, group in groupby_plotid:
-        plot_table+= "%s;%f;%f;%s;%s;%s;%f;%s \n" % (group["plotID"].unique()[0],group["decimalLatitude"].unique()[0],group["decimalLongitude"].unique()[0],group["footprintWKT"].unique()[0],
+        plot_table+= "%s;%f;%f;%f;%s;%s;%s;%f;%s \n" % (group["plotID"].unique()[0],group["decimalLatitude"].unique()[0],group["decimalLongitude"].unique()[0],group["coordinateUncertaintyInMeters"].unique()[0],group["footprintWKT"].unique()[0],
                                                         group["habitat"].unique()[0],group["samplingProtocol"].unique()[0],group["sampleSizeValue"].unique()[0],
                                                         group["sampleSizeUnit"].unique()[0])
     return plot_table
