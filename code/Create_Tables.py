@@ -9,7 +9,7 @@ def create_speciestable(vegdb_dataframe):
     return sp_table
 
 def create_plotID(vegdb_dataframe):
-    vegdb_dataframe['plotID'] = pd.Categorical(vegdb_dataframe['decimalLatitude'].astype(str) + vegdb_dataframe['decimalLongitude'].astype(str)).codes
+    vegdb_dataframe['plotID'] = pd.Categorical(vegdb_dataframe['footprintWKT'].astype(str)).codes
     return vegdb_dataframe
 
 def create_plottable(vegdb_dataframe):
