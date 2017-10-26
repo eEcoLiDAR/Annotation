@@ -9,20 +9,20 @@ def create_speciestable(vegdb_dataframe):
     return sp_table
 
 def create_plotID(vegdb_dataframe):
-    vegdb_dataframe['plotID'] = pd.Categorical(vegdb_dataframe['footprintWKT'].astype(str)).codes
+    vegdb_dataframe['polygonID'] = pd.Categorical(vegdb_dataframe['footprintWKT'].astype(str)).codes
     return vegdb_dataframe
 
 def create_plottable(vegdb_dataframe):
-    groupby_plotid = vegdb_dataframe.groupby('plotID')
+    groupby_plotid = vegdb_dataframe.groupby('polygonID')
     plot_table=""
     for location, group in groupby_plotid:
-        plot_table+= "%s;%f;%f;%f;%s;%s;%s;%f;%s;%f \n" % (group["plotID"].unique()[0],group["decimalLatitude"].unique()[0],group["decimalLongitude"].unique()[0],group["coordinateUncertaintyInMeters"].unique()[0],group["footprintWKT"].unique()[0],
+        plot_table+= "%s;%f;%f;%f;%s;%s;%s;%f;%s;%f \n" % (group["polygonID"].unique()[0],group["decimalLatitude"].unique()[0],group["decimalLongitude"].unique()[0],group["coordinateUncertaintyInMeters"].unique()[0],group["footprintWKT"].unique()[0],
                                                         group["habitat"].unique()[0],group["samplingProtocol"].unique()[0],group["sampleSizeValue"].unique()[0],
                                                         group["sampleSizeUnit"].unique()[0],group["area"].unique()[0])
     return plot_table
 
 def create_observtable(vegdb_dataframe,nameofoutput):
-    obs_table = vegdb_dataframe[["plotID","eventID","speciesKey","year","month","day","eventDate","organismQuantity","organismQuantityType"]]
+    obs_table = vegdb_dataframe[["polygonID","eventID","speciesKey","year","month","day","eventDate","organismQuantity","organismQuantityType"]]
     obs_table = obs_table[pd.isnull(obs_table.speciesKey) == False]
     obs_table = obs_table[pd.isnull(obs_table.year) == False]
     obs_table.to_csv(nameofoutput+'.csv',sep=";",index=False)
