@@ -24,6 +24,9 @@ vegdb=pd.read_csv(args.occurrence,sep='\t')
 #Exclude fungi and algea and where the coordinateUncertaintyInMeters is lower than 1 km and samplesizevalue is not null -- specific application for the BSc course
 vegdb= vegdb[pd.isnull(vegdb.habitat)==False]
 vegdb= vegdb[pd.isnull(vegdb.sampleSizeValue)==False]
+vegdb= vegdb[pd.isnull(vegdb.decimalLongitude)==False]
+vegdb= vegdb[pd.isnull(vegdb.decimalLatitude)==False]
+vegdb= vegdb[pd.isnull(vegdb.footprintWKT)==False]
 vegdb = vegdb[(vegdb["kingdom"]== "Plantae")]
 vegdb = vegdb[(vegdb["coordinateUncertaintyInMeters"]<1000)]
 
