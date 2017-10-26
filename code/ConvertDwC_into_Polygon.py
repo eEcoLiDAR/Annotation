@@ -2,6 +2,7 @@ from shapely.geometry import mapping
 from shapely.wkt import loads
 from fiona import collection
 
+from pandas import DataFrame
 from geopandas import GeoDataFrame
 
 def polyarea(vegdb_dataframe):
@@ -11,13 +12,10 @@ def polyarea(vegdb_dataframe):
     return geovegdb_dataframe['geometry'].area
 
 
-def polygonize_dwc(vegdb_dataframe,shapefile):
+def polygonize_dwc(vegdb_dataframe,shapefilename):
+    vegddb=vegdb_dataframe.groupby('polygonID').first().reset_index()
+    geometry = vegddb['footprintWKT'].map(loads)
+    crs = {'init': 'epsg:18992'}
+    geovegdb_dataframe = GeoDataFrame(vegddb[["footprintWKT","polygonID"]], crs=crs, geometry=geometry)
+    geovegdb_dataframe.to_file(shapefilename+".shp", driver='ESRI Shapefile')
 
-    groupbypoly = vegdb_dataframe.groupby('footprintWKT')
-    schema = {'geometry': 'Polygon',
-              'properties': {'polygonID': 'str'}, }
-
-    with collection(shapefile, "w", "ESRI Shapefile", schema) as output:
-        for footprintWKT, group in groupbypoly:
-            geometry = loads(footprintWKT)
-            output.write({'geometry': mapping(geometry),'properties': {'polygonID': str(group["polygonID"].unique()[0])}, })
