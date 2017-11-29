@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6984170-3e70-4525-8552-566671aecc71" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/analyze_db.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/analyze_db.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,17 +46,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analyze_db.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="analyze_db.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jupyter_explore/analyze_db.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="7" />
+              <selected id="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AnalyseTables.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jupyter_explore/AnalyseTables.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InfoBScProject.ipynb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
               <selected id="2" />
@@ -87,6 +97,7 @@
         <option value="$PROJECT_DIR$/jupyter_explore/Mergetables.ipynb" />
         <option value="$PROJECT_DIR$/jupyter_explore/mergewithcorrectid.ipynb" />
         <option value="$PROJECT_DIR$/jupyter_explore/analyze_db.ipynb" />
+        <option value="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" />
       </list>
     </option>
   </component>
@@ -116,17 +127,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="WetLand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WetLand" type="462c0819:PsiDirectoryNode" />
+              <item name="Annotation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Annotation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WetLand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WetLand" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WetLand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WetLand" type="462c0819:PsiDirectoryNode" />
+              <item name="Annotation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Annotation" type="462c0819:PsiDirectoryNode" />
               <item name="jupyter_explore" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -168,7 +174,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108169444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18759455" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -216,14 +222,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/ConvertDwC_into_Polygon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="69" lean-forward="false" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/Create_Tables.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -622,7 +620,7 @@
     <entry file="file://$PROJECT_DIR$/jupyter_explore/AnalyseTables.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="1" />
+          <selected id="2" />
         </state>
       </provider>
     </entry>
@@ -630,6 +628,13 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="2" />
         </state>
       </provider>
     </entry>
