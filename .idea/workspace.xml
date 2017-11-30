@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6984170-3e70-4525-8552-566671aecc71" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,6 +50,15 @@
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
               <selected id="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mergetables.ipynb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jupyter_explore/Mergetables.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="2" />
             </state>
           </provider>
         </entry>
@@ -609,14 +617,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jupyter_explore/Mergetables.ipynb">
+    <entry file="file://$PROJECT_DIR$/jupyter_explore/mergewithcorrectid.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jupyter_explore/mergewithcorrectid.ipynb">
+    <entry file="file://$PROJECT_DIR$/jupyter_explore/Mergetables.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="2" />
