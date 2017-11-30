@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6984170-3e70-4525-8552-566671aecc71" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/AnalyseTables.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/AnalyseTables.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/DataPrep_fromDwC.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/DataPrep_fromDwC.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/Mergetables.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/Mergetables.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/analyze_db.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/analyze_db.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/mergewithcorrectid.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/mergewithcorrectid.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,16 +50,7 @@
         <entry file="file://$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataPrep_fromDwC.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jupyter_explore/DataPrep_fromDwC.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="6" />
+              <selected id="9" />
             </state>
           </provider>
         </entry>
@@ -600,20 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jupyter_explore/Mergetables.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jupyter_explore/mergewithcorrectid.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/Create_Tables.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -637,10 +609,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jupyter_explore/Mergetables.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jupyter_explore/mergewithcorrectid.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="7" />
+          <selected id="9" />
         </state>
       </provider>
     </entry>
