@@ -35,4 +35,4 @@ def extractspecies(joined_db,plottable,species,covermax,covermin):
 joined_db=filterbyyear(observationtable,plottable,speciestable,2007,"Forest")
 print(joined_db.shape)
 
-extractspecies(joined_db,plottable,"Pinus sylvestris",50,10)
+extractspecies(joined_db,plottable,"Quercus robur",50,10)
