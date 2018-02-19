@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6984170-3e70-4525-8552-566671aecc71" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/SelectInfofromDataBase.py" afterPath="$PROJECT_DIR$/code/SelectInfofromDataBase.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/WetLand.iml" afterPath="$PROJECT_DIR$/.idea/WetLand.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/TreeFeasibilityTest_InfoBSc.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/TreeFeasibilityTest_InfoBSc.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/forInfoBScProject.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/forInfoBScProject.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="forInfoBScProject.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jupyter_explore/forInfoBScProject.ipynb">
+      <file leaf-file-name="new_DutchVegetationDatabase.ipynb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jupyter_explore/new_DutchVegetationDatabase.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="6" />
+              <selected id="4" />
             </state>
           </provider>
         </entry>
@@ -26,26 +31,7 @@
         <entry file="file://$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreeFeasibilityTest_InfoBSc.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jupyter_explore/TreeFeasibilityTest_InfoBSc.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectInfofromDataBase.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/SelectInfofromDataBase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-              <folding />
+              <selected id="0" />
             </state>
           </provider>
         </entry>
@@ -55,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -75,19 +61,20 @@
         <option value="$PROJECT_DIR$/jupyter_explore/analyze_db.ipynb" />
         <option value="$PROJECT_DIR$/jupyter_explore/Mergetables.ipynb" />
         <option value="$PROJECT_DIR$/jupyter_explore/DataPrep_fromDwC.ipynb" />
-        <option value="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" />
         <option value="$PROJECT_DIR$/jupyter_explore/.ipynb_checkpoints/forBScProject.ipynb" />
-        <option value="$PROJECT_DIR$/jupyter_explore/forInfoBScProject.ipynb" />
-        <option value="$PROJECT_DIR$/jupyter_explore/TreeFeasibilityTest_InfoBSc.ipynb" />
         <option value="$PROJECT_DIR$/code/SelectInfofromDataBase.py" />
+        <option value="$PROJECT_DIR$/jupyter_explore/TreeFeasibilityTest_InfoBSc.ipynb" />
+        <option value="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" />
+        <option value="$PROJECT_DIR$/jupyter_explore/forInfoBScProject.ipynb" />
+        <option value="$PROJECT_DIR$/jupyter_explore/new_DutchVegetationDatabase.ipynb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3829" />
-    <option name="y" value="-11" />
-    <option name="width" value="3862" />
-    <option name="height" value="2136" />
+    <option name="x" value="1211" />
+    <option name="y" value="-8" />
+    <option name="width" value="3306" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -104,6 +91,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -131,11 +119,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../komazsofi/myPhD_escience_analysis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -187,19 +175,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1909" y="-11" width="3862" height="2136" extended-state="6" />
+    <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12321523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19936034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953957" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32953957" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -238,13 +226,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/Process_DwC_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/ConvertDwC_into_Polygon.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -555,6 +536,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jupyter_explore/.ipynb_checkpoints/forBScProject.ipynb" />
+    <entry file="file://$PROJECT_DIR$/code/SelectInfofromDataBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jupyter_explore/TreeFeasibilityTest_InfoBSc.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jupyter_explore/forInfoBScProject.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -569,18 +565,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jupyter_explore/TreeFeasibilityTest_InfoBSc.ipynb">
+    <entry file="file://$PROJECT_DIR$/jupyter_explore/new_DutchVegetationDatabase.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/SelectInfofromDataBase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-          <folding />
+          <selected id="4" />
         </state>
       </provider>
     </entry>
