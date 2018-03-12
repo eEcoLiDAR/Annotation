@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6984170-3e70-4525-8552-566671aecc71" name="Default" comment="" />
+    <list default="true" id="c6984170-3e70-4525-8552-566671aecc71" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jupyter_explore/new_DutchDB.ipynb" afterPath="$PROJECT_DIR$/jupyter_explore/new_DutchDB.ipynb" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,20 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="new_DutchVegetationDatabase.ipynb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jupyter_explore/new_DutchVegetationDatabase.ipynb">
+      <file leaf-file-name="new_DutchDB.ipynb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jupyter_explore/new_DutchDB.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfoBScProject.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
+              <selected id="7" />
             </state>
           </provider>
         </entry>
@@ -60,6 +55,7 @@
         <option value="$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb" />
         <option value="$PROJECT_DIR$/jupyter_explore/forInfoBScProject.ipynb" />
         <option value="$PROJECT_DIR$/jupyter_explore/new_DutchVegetationDatabase.ipynb" />
+        <option value="$PROJECT_DIR$/jupyter_explore/new_DutchDB.ipynb" />
       </list>
     </option>
   </component>
@@ -168,9 +164,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="1909" y="-11" width="3862" height="2136" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19936034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20068747" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953957" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -218,13 +215,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/ConvertDwC_into_Polygon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="104" lean-forward="false" selection-start-line="22" selection-start-column="104" selection-end-line="22" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jupyter_explore/AnalyseTables.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -532,7 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -553,7 +542,7 @@
     <entry file="file://$PROJECT_DIR$/jupyter_explore/InfoBScProject.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="8" />
+          <selected id="0" />
         </state>
       </provider>
     </entry>
@@ -561,6 +550,13 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jupyter_explore/new_DutchDB.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="7" />
         </state>
       </provider>
     </entry>
